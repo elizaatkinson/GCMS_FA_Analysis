@@ -195,7 +195,6 @@ python your_script_name.py
 - The script assumes that `Name` uniquely links rows between the two input workbooks.
 - The internal standard is hard-coded as `C17:0`.
 - Total fatty acids exclude the internal standard by design.
-- The final print statement mentions `df_list.xlsx`, but the actual file written is `df_list_python.xlsx`.
 - The import `Workbook` from `openpyxl` is not used in the script.
 - If any required fatty-acid or metadata columns are missing, the script will fail unless the code is adapted.
 
