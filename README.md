@@ -93,7 +93,7 @@ $$
 
 This converts fatty acids from micrograms to milligrams and expresses lipid content as a percentage of cell dry weight.
 
-### 4. `C16_C18_ratio`
+### 4. C16/C18 ratio
 
 $$
 \text{C16/C18 ratio} = \frac{C16{:}0 + C16{:}1}{C18{:}0 + C18{:}1 + C18{:}2}
