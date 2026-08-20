@@ -130,7 +130,7 @@ Standard-deviation columns are named using the suffix `_sd`.
 
 The script writes:
 
-- `df_list_python.xlsx`
+- `df_list.xlsx`
 
 with the following sheets:
 
