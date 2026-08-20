@@ -1,4 +1,4 @@
-# Fatty Acid Composition Analysis Script
+# Fatty Acid GC–MS Analysis Pipeline
 
 This script processes GC–MS fatty-acid data by combining raw peak-area measurements with sample metadata, normalizing each fatty acid to an internal standard, calculating summary lipid metrics, exporting processed tables to Excel, and generating publication-style figures.
 
@@ -14,7 +14,7 @@ The workflow:
    - normalized values for each fatty acid
    - total fatty acids excluding the internal standard
    - lipid content
-   - $$C16/C18$$ ratio
+   - `C16_C18_ratio`
    - saturation
 6. creates grouped mean and standard-deviation tables by `Strain`
 7. calculates percent contribution of each fatty acid to total fatty acids
@@ -80,7 +80,7 @@ where the internal standard peak area is taken from `C17:0`.
 Total fatty acids are calculated by summing all measured fatty acids except the internal standard:
 
 $$
-\text{total\_FA} = C16{:}0 + C16{:}1 + C18{:}0 + C18{:}1 + C18{:}2
+\text{total FA} = C16{:}0 + C16{:}1 + C18{:}0 + C18{:}1 + C18{:}2
 $$
 
 ### 3. Lipid content
@@ -88,15 +88,15 @@ $$
 Lipid content is calculated as:
 
 $$
-\text{lipid\_content} = \frac{\text{total\_FA}}{1000} \times \frac{100}{\text{CDW\_culture}}
+\text{lipid content} = \frac{\text{total FA}}{1000} \times \frac{100}{\text{CDW culture}}
 $$
 
 This converts fatty acids from micrograms to milligrams and expresses lipid content as a percentage of cell dry weight.
 
-### 4. $$C16/C18$$ ratio
+### 4. `C16_C18_ratio`
 
 $$
-\text{C16\_C18\_ratio} = \frac{C16{:}0 + C16{:}1}{C18{:}0 + C18{:}1 + C18{:}2}
+\text{C16/C18 ratio} = \frac{C16{:}0 + C16{:}1}{C18{:}0 + C18{:}1 + C18{:}2}
 $$
 
 ### 5. Saturation
@@ -110,7 +110,7 @@ $$
 For the fatty-acid composition plot, each fatty acid is converted to a percentage of total fatty acids:
 
 $$
-\text{FA percentage} = \frac{\text{normalized FA}}{\text{total\_FA}} \times 100
+\text{FA percentage} = \frac{\text{normalized FA}}{\text{total FA}} \times 100
 $$
 
 ## Grouped summary outputs
@@ -145,7 +145,7 @@ The script saves:
 
 - `result_plot1FA.jpg` — grouped bar chart of fatty-acid composition percentages
 - `result_plot1growth.jpg` — scatter plot with error bars for lipid content
-- `result_plot_ratios.jpg` — grouped bar chart for $$C16/C18$$ ratio and saturation
+- `result_plot_ratios.jpg` — grouped bar chart for `C16_C18_ratio` and saturation
 - `result_plot1.jpg` — combined figure with fatty-acid composition and lipid content panels
 
 ## Plot descriptions
