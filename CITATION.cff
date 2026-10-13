@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "ATKINSON"
+  given-names: "ELIZA"
+  orcid: "https://orcid.org/0000-0002-7169-2791"
+- family-names: "KONZOCK"
+  given-names: "OLIVER"
+  orcid: "https://orcid.org/0000-0001-5253-5961"
+title: "GCMS_FA_Analysis"
+version: 1.0.0
+date-released: 2026-10-13
+url: "https://github.com/elizaatkinson/GCMS_FA_Analysis"
