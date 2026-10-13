@@ -11,3 +11,4 @@ title: "GCMS_FA_Analysis"
 version: 1.0.0
 date-released: 2026-10-13
 url: "https://github.com/elizaatkinson/GCMS_FA_Analysis"
+notes: "Original R implementation was created by Oliver Konzock. Ported to python by Eliza Atkinson"
